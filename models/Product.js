@@ -1,6 +1,6 @@
 const mongoose = require ('mongoose');
-
-const productSchema = new mongoose.Schema({
+const schema = mongoose.Schema;
+const productSchema = new schema({
     name:String,
     price:Number,
     description:String,
@@ -14,4 +14,4 @@ const productSchema = new mongoose.Schema({
         default: Date.now
     }
 
-});     
+});
